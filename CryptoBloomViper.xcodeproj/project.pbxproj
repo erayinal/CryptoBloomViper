@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E837948D2BEB9C1000AF5BBC /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E837948C2BEB9C1000AF5BBC /* Presenter.swift */; };
 		E8CA76972BEAC4E200AD93DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA76962BEAC4E200AD93DB /* AppDelegate.swift */; };
 		E8CA76992BEAC4E200AD93DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA76982BEAC4E200AD93DB /* SceneDelegate.swift */; };
-		E8CA769B2BEAC4E200AD93DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA769A2BEAC4E200AD93DB /* ViewController.swift */; };
 		E8CA76A02BEAC4E300AD93DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CA769F2BEAC4E300AD93DB /* Assets.xcassets */; };
 		E8CA76A32BEAC4E300AD93DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8CA76A22BEAC4E300AD93DB /* Base */; };
 		E8CA76AB2BEAC56900AD93DB /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA76AA2BEAC56900AD93DB /* View.swift */; };
@@ -19,10 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E837948C2BEB9C1000AF5BBC /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		E8CA76932BEAC4E200AD93DB /* CryptoBloomViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoBloomViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CA76962BEAC4E200AD93DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8CA76982BEAC4E200AD93DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8CA769A2BEAC4E200AD93DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8CA769F2BEAC4E300AD93DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8CA76A22BEAC4E300AD93DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8CA76A42BEAC4E300AD93DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,12 +64,12 @@
 			children = (
 				E8CA76962BEAC4E200AD93DB /* AppDelegate.swift */,
 				E8CA76982BEAC4E200AD93DB /* SceneDelegate.swift */,
-				E8CA769A2BEAC4E200AD93DB /* ViewController.swift */,
 				E8CA769F2BEAC4E300AD93DB /* Assets.xcassets */,
 				E8CA76A12BEAC4E300AD93DB /* LaunchScreen.storyboard */,
 				E8CA76A42BEAC4E300AD93DB /* Info.plist */,
 				E8CA76AA2BEAC56900AD93DB /* View.swift */,
 				E8CA76AC2BEAC58800AD93DB /* Interactor.swift */,
+				E837948C2BEB9C1000AF5BBC /* Presenter.swift */,
 				E8CA76AE2BEACA6A00AD93DB /* Entity.swift */,
 				E8CA76B02BEACA7E00AD93DB /* Router.swift */,
 			);
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8CA76AB2BEAC56900AD93DB /* View.swift in Sources */,
-				E8CA769B2BEAC4E200AD93DB /* ViewController.swift in Sources */,
+				E837948D2BEB9C1000AF5BBC /* Presenter.swift in Sources */,
 				E8CA76AF2BEACA6A00AD93DB /* Entity.swift in Sources */,
 				E8CA76B12BEACA7E00AD93DB /* Router.swift in Sources */,
 				E8CA76AD2BEAC58800AD93DB /* Interactor.swift in Sources */,
