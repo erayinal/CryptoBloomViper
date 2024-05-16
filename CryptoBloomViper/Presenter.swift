@@ -28,11 +28,25 @@ protocol AnyPresenter {
 class CryptoPresenter : AnyPresenter {
     var router: (any AnyRouter)?
     
-    var interactor: (any AnyInteractor)?
+    var interactor: (any AnyInteractor)?{
+        didSet{
+            interactor?.downloadCryptos()
+        }
+    }
+    
     
     var view: (any AnyView)?
     
     func interactorDidDownloadCrypto(result: Result<[Crypto], any Error>) {
+        //...10 Şimdi burada bu fonksiyon çalıştığına göre Crypto indirilmiş olacak ve biz ne yapıcaz? View'a kendini güncellemesini söyleyeceğiz ama şuan View içerisinde fonksiyonu yazmadığımız için yazamıyoruz, View'da fonksiyonu yazınca buraya gelip bu fonksiyonun içerisini dolduracağız
+        //11 Şimdi Interactor içerisine gidelim
+        
+        switch result {
+        case.success(let cryptos):
+            view?.update(with: cryptos)
+        case.failure(_):
+            view?.update(with: "Try Again Later...")
+        }
         
     }
     
